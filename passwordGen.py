@@ -1,4 +1,4 @@
-import tkinter as tk 
+from tkinter import  * 
 import string 
 import random 
 
@@ -8,9 +8,12 @@ all_characters = list(ascii_characters)
 
 print("This is the password generator program.")
 
-window = tk.Tk()
+window = Tk()
 window.title("Password Generator/v.1")
 window.geometry("500x250")
+window.iconbitmap(default="temporarily_icon.png")
+label = Label(window , text="How many characters you wanna use: ")
+label.pack()
 
 
 
